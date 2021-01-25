@@ -11,7 +11,7 @@ const session = require("express-session");
 
 const validartoken = require('./middlewares/verificar');
 
-
+var mainRouter = require('./routes/main');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -31,6 +31,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use('/', mainRouter)
 app.use('/pelis',validartoken, indexRouter);
 app.use('/users', usersRouter);
 
