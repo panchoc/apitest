@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt')
 router.post('/new', async (req, res) => {
 
 /*
- validar formato y pass 
+ validar formato y pass hapi/joi
  . . .
  
  */

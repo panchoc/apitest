@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "nodemon app", 
+    "start": "node run app"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
