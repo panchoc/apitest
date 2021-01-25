@@ -1,10 +1,10 @@
 {
   "name": "api-test",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "nodemon app", 
-    "start": "node run app"
+    "start": "node app"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
